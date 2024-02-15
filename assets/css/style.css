@@ -482,6 +482,10 @@ from{
       display: flex;
       flex-direction: column;
       row-gap: var(--mr-2);
+      z-index: 5;
+      margin-left: -2rem;
+     
+      
 
       .home__social-link {
         color: #777;
