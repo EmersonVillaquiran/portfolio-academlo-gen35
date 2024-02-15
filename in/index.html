@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es" >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Emerson C. Villaquirán">
+  <meta name="description" content="Portafolio de proyectos de desarrollador">
+  <meta name="keywords" content="Developer, Full Stack, Programer">
+  <meta name="theme-color" content="#09f">
+  <!-- Iconos  -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- tipografía  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <title>Portafolio</title>
+
+  <link rel="icon" href="/assets/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="module" src="/assets/js/main.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "WCc_8KIMni3B1XL8o",
+      });
+    })();
+  </script>
+</head>
+
+<body data-dark>
+  <header class="header" data-dark>
+    <nav class="navbar grid--container" data-dark>
+      <a class="navbar__logo" href="#" data-dark><i class='bx bxs-registered' data-dark></i>Emerson</a>
+
+      <div id="nav" class="navbar__menu" data-dark>
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon"></i></a>
+
+        <ul class="navbar__list" data-dark>
+          <li class="navbar__item" data-dark>
+            <a class="navbar__link active" href="#home" data-dark>Start</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about" data-dark>About me</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills" data-dark>Skills</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects" data-dark>Briefcase</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact" data-dark>Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__toggles" data-dark>
+        <div class="navbar__toggle--darkmode">
+          <input type="checkbox" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class='bx bx-sun navbar__toggle--darkmode-sun'></i>
+            <i class='bx bx-moon navbar__toggle--darkmode-moon'></i>
+          </label>
+        </div>
+        <div class="navbar__toggle--language">
+          <input type="checkbox" id="language-toggle" class="navbar__toggle--language-input check" checked />
+          <label for="language-toggle" class="navbar__toggle--language-label">
+        </div>
+      </div>
+      <a href="#nav" data-dark><i class="bx bx-menu btn__open navbar__icon" data-dark></i></a>
+    </nav>
+  </header>
+
+  <main data-dark>
+    <section id="home" class="home" data-dark>
+      <div class="home__logos" data-dark>
+      <i class='bx bxl-html5 home__layer home__layer--1' data-speed="10" data-dark></i>
+      <i class='bx bxl-javascript home__layer home__layer--2' data-speed="-10" data-dark></i>
+      <i class='bx bxl-css3 home__layer home__layer--3' data-speed="5" data-dark></i>
+      <i class='bx bxl-nodejs home__layer home__layer--4' data-speed="-10" data-dark></i>
+      <i class='bx bxl-react home__layer home__layer--5' data-speed="10" data-dark></i>
+      <i class='bx bxl-tailwind-css home__layer home__layer--6' data-speed="-10" data-dark></i>
+      <i class='bx bxl-redux home__layer home__layer--7' data-speed="10" data-dark></i>
+      <i class='bx bxl-typescript home__layer home__layer--8' data-speed="-10" data-dark></i>
+      <i class='bx bxl-git home__layer home__layer--9' data-speed="10" data-dark></i>
+      <i class='bx bxl-graphql home__layer home__layer--10' data-speed="-10" data-dark></i>
+      <i class='bx bx-code-alt home__layer home__layer--11' data-speed="10" data-dark></i>
+    </div>
+      <div class="home__container grid--container" data-dark>
+        <div class="home__image">
+          <span></span>
+          <img src="/assets/img/me3.5.png" alt="profile photo" />
+        </div>
+
+        <ul class="home__social">
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://www.linkedin.com/in/camilo-villaquiran-83674a172/"><i class="bx bxl-linkedin"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://github.com/EmersonVillaquiran"><i class='bx bxl-github'></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="#contact"><i class='bx bx-envelope'></i></a>
+          </li>
+        </ul>
+
+        <div class="home__info">
+          <h3 class="home__im">I'm</h3>
+          <h1 class="home__name">Emerson C. Villaquirán</h1>
+          <h2 class="home__title">Full Stack Developer</h2>
+          <p class="home__description">
+            I am a web developer, passionate about technology and programming.
+          </p>
+        </div>
+
+        <div class="home__buttons">
+          <a href="/docs/CVEmerson.pdf">
+          <button class="btn btn--primary" type="button">Donwload CV</button>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="about" class="about section" data-dark>
+      <h2 class="section__title" data-dark>About me</h2>
+
+      <div class="about__container grid--container" data-dark>
+        <p class="about__description">
+          Passionate programmer with deep technical knowledge, 
+          solves challenges with creativity and precision, 
+          building innovative solutions with elegant and efficient code
+        </p>
+
+        <div class="about__cards">
+          <!--Card 1 -->
+          <div class="about__card">
+            <img class="about__card--img" src="/assets/img/mesit.jpg" alt="Laborando como ingeniero">
+          </div>
+          <!--Card 2 -->
+          <div class="about__card">
+            <img class="about__card--img" src="/assets/img/selfieme.jpg" alt="Laborando como diseñador">
+          </div>
+          <!--Card 3 -->
+          <div class="about__card">
+            <img class="about__card--img" src="/assets/img/megreen.jpg" alt="Trabajando en equipo">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="skills" class="skills section" data-dark>
+      <h2 class="section__title">Skills</h2>
+
+      <div class="skills__container grid--container">
+        <p class="skills__description">
+          His skills span several languages and platforms, standing out for his ability to address complex challenges with creative and 
+          efficient solutions. His meticulous approach and passion for continuous improvement position him as an expert at the forefront 
+          of software development, capable of realizing innovative ideas with precision and elegance.
+        </p>
+
+        <div class="skills__wrapper">
+          <div class="skills__cards">
+            <!--Card 1 -->
+            <input type="radio" name="slide" id="c1" checked class="skills__input">
+            <label for="c1" class="skills__card">
+              <div class="skills__card-row">
+                <i class="bx bxl-html5"></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">HTML</h3>
+                  <p>A fundamental language for the web, HTML structures information with tags, facilitating the creation of accessible and functional pages.</p>
+                </div>
+              </div>
+            </label>
+            <!--Card 2 -->
+            <input type="radio" name="slide" id="c2" checked class="skills__input">
+            <label for="c2" class="skills__card">
+              <div class="skills__card-row">
+                <i class="bx bxl-css3"></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">CSS3</h3>
+                  <p>CSS3 elevates web design with advanced styles. It allows you to customize the presentation, create animations and ensure attractive visual experiences on the pages.</p>
+                </div>
+              </div>
+            </label>
+            <!--Card 3 -->
+            <input type="radio" name="slide" id="c3" checked class="skills__input">
+            <label for="c3" class="skills__card">
+              <div class="skills__card-row">
+                <i class="bx bxl-javascript"></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">Javascript</h3>
+                  <p>JavaScript, the language of the dynamic web. It powers interactivity, manipulates content and offers fluid experiences, 
+                    boosting application functionality.</p>
+                </div>
+              </div>
+            </label>
+            <!--Card 4 -->
+            <input type="radio" name="slide" id="c4" checked class="skills__input">
+            <label for="c4" class="skills__card">
+              <div class="skills__card-row">
+                <i class='bx bxl-react'></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">React</h3>
+                  <p>React, JavaScript library to build efficient user interfaces. 
+                    It promotes modular development, facilitates the creation of reusable 
+                    components and optimizes the user experience in modern web applications.</p>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="skills__tags">
+          <h3 class="skills__tags-title">Soft skills</h3>
+          <div class="skills__tags-container">
+            <span class="skills__tag">Responsible</span>
+            <span class="skills__tag">Team Work</span>
+            <span class="skills__tag">Creative</span>
+            <span class="skills__tag">Punctual</span>
+            <span class="skills__tag">Proactive</span>
+            <span class="skills__tag">Autodidact</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section" data-dark>
+      <h2 class="section__title">Projects</h2>
+      <!-- PROYECTO 1  -->
+      <div class="projects__container grid--container">
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="/assets/img/Pag1.png" alt="project 1" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 1</h3>
+              <p class="projects__description">
+                Personal blog, ideal for freelance professionals.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  <a href="https://pagpersonal.netlify.app/">SEE DEMO</a>
+                </button>
+                <button class="btn projects__button" type="button">
+                  SEE CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROYECTO 2  -->
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="/assets/img/Pag2.png" alt="project 2" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 2</h3>
+              <p class="projects__description">
+                Entrepreneurship blog, perfect for lovers of personal development. 
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  <a href="https://blogaboutcafe.netlify.app/">SEE DEMO</a>
+                </button>
+                <button class="btn projects__button" type="button">
+                  SEE CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROYECTO 3 -->
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="/assets/img/Pag3.png" alt="project 3" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 3</h3>
+              <p class="projects__description">
+                Advertising landing page. Do you want to inform your clients about an event or festival? This is your project
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  <a href="https://festivalterminado.netlify.app/">SEE DEMO</a>
+                </button>
+                <button class="btn projects__button" type="button">
+                  SEE CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROYECTO 4  -->
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="/assets/img/pag4.png" alt="project 4" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 4</h3>
+              <p class="projects__description">
+                Have a presence on the web with our corporate pages.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  <a href="https://veterinariacenter.netlify.app/">SEE DEMO</a>
+                </button>
+                <button class="btn projects__button" type="button">
+                  SEE CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section" data-dark>
+      <h2 class="section__title">Contact</h2>
+
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Contact information</h3>
+          <p class="contact__info-description">
+            Contact me by any of these means, to start building your dreams.
+          </p>
+
+          <address class="contatc__info-data">
+            <div class="contact__info-item">
+              <i class='bx bxl-whatsapp'></i>
+
+              <span class="contact__info-number">
+                <a href="https://wa.me/0000000000000?text=Tu%20Mensaje%20De%20Texto" target="_blank">Send message to WhatsApp</a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-phone"></i>
+
+              <span class="contact__info-number">
+                <a href="tel:1-234-567-8910"> +1 123 456 7890 </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bxs-envelope"></i>
+
+              <span class="contact__info-mail">
+                <a id="mail" href="mailto:test@correo.com"> e.c.villaquiran@gmail.com </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-map"></i>
+
+              <span class="contact__info-map"> Bogotá, Colombia. </span>
+            </div>
+          </address>
+        </div>
+
+        <div class="contact__form" data-dark>
+          <h3 class="contact__form-title">Send Message</h3>
+          <form id="form" class="contact__form-container">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Name</label>
+              <input type="text" id="name" name="name" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Email</label>
+              <input type="email" id="email" name="email" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Affair</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Message</label>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+            <dialog id="modal">
+              Formulario enviado con éxito!
+              <button type="reset" id="btn_close-modal">Cerrar</button>
+            </dialog>
+
+            <button type="submit" class="btn contact__form-button">
+              Send
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__info">
+        <h3 class="footer__title">Emerson C. Villaquirán</h3>
+        <p class="footer__description">
+          Soy desarrollador web, apasionado por la tecnología y la
+          programación.
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Redes Sociales</h3>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#"><i class="bx bxl-facebook"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#"><i class="bx bxl-instagram"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#"><i class="bx bxl-twitter"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#"><i class="bx bxl-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy"></p>
+  </footer>
+</body>
+
+</html>
