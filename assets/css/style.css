@@ -466,7 +466,7 @@ from{
       margin: 0 auto;
       z-index: 2;
       > img{
-        width: 300px;
+        width: 80%;
         margin: 10%;
         margin-top: 5rem;
       }
