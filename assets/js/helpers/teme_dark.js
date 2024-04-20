@@ -38,5 +38,7 @@ export default function darkTheme(btn, classDark) {
     themeBTn.addEventListener('click', () => {
         selectors.forEach(el => el.classList.toggle(classDark));
         themeBTn.textContent = (themeBTn.textContent === moon) ? sun : moon;
+        localStorage.setItem('darkModeEnable', 'true')
     });
+
 }
