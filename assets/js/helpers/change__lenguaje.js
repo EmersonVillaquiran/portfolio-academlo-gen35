@@ -1,9 +1,9 @@
 
 const flags = document.querySelector('.check');
 
-flags.addEventListener('click', languaje);
+flags.addEventListener('click', language);
 
-function languaje(){
+function language(){
     const id = flags.checked;
     if (id) {
         location.href = '/in/index.html'
@@ -12,4 +12,4 @@ function languaje(){
     }
 }
 
-export default languaje
+export default language
